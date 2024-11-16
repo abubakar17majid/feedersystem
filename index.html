@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automated Chicken Feeder & Monitoring</title>
-    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -112,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const coopTemperatureElement = document.getElementById('coop-temperature');
     function updateTemperatureDisplay() {
-        const coopTemperature = (Math.random() * 10 + 20).toFixed(1); // Random between 20-30°C
+        const coopTemperature = (Math.random() * 10 + 20).toFixed(1); 
         coopTemperatureElement.textContent = `${coopTemperature}°C`;
     }
     setInterval(updateTemperatureDisplay, 10000);
